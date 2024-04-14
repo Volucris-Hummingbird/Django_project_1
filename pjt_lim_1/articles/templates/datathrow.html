@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>datathrow</h1>
+<form action="/datacatch/" method="GET">
+    <label for="message">메세지 입력</label>
+    <input type="text" id="message" name="message">
+    <!-- name, id 를 다시 찾아보기 -->
+    <button type="submit">전송</button>
+</form>
+
+
+{% endblock %}
